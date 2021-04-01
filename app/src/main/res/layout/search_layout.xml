@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_keyword"
+        android:hint="Movie Name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_year"
+        android:layout_below="@id/et_keyword"
+        android:hint="Year"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Results"
+        android:id="@+id/btn_search"
+        android:layout_below="@id/et_year"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Result"/>
+
+<!--    <include
+        layout="@layout/list_view_only"
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:layout_below="@id/tv_movies"
+        android:layout_marginTop="20dp" />-->
+
+<!--    <ListView
+        android:id = "@+id/lv_list"
+        android:layout_width = "wrap_content"
+        android:layout_height = "match_parent"
+        android:divider = "#000"
+        android:dividerHeight = "1dp"
+        android:footerDividersEnabled = "false"
+        android:headerDividersEnabled = "false"
+        android:layout_below="@id/btn_search"
+        android:layout_marginTop="20dp"/>-->
+
+    <include
+        layout="@layout/list_view_only"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_search"
+        android:layout_marginTop="10dp"
+        />
+
+  <!--  <ImageView
+        android:id="@+id/iv_poster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_search"
+        android:layout_marginRight="6dip"
+        android:contentDescription="TODO"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_result_moviename"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/iv_poster"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_result_year"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_below="@id/tv_result_moviename"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_click"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:layout_below="@id/tv_result_year"
+        android:gravity="center_horizontal"/>
+-->
+
+
+
+</RelativeLayout>

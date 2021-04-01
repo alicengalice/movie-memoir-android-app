@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_moviename_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Movie Name"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:background="#D6CFC7"/>
+
+    <TextView
+        android:id="@+id/tv_realeasedate_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Release Date"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:background="#D6CFC7"/>
+
+    <TextView
+        android:id="@+id/tv_ratingscore_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Rating Score"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:background="#D6CFC7"/>
+</LinearLayout>

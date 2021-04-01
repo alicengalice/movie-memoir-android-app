@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/tv_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pieChart"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/selectDateChart"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_startdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/startDate"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <DatePicker
+        android:id="@+id/dp_startdate"
+        android:layout_width="wrap_content"
+        android:layout_height="76dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+    <TextView
+        android:id="@+id/tv_enddate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/endDate"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <DatePicker
+        android:id="@+id/dp_enddate"
+        android:layout_width="wrap_content"
+        android:layout_height="76dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+    <Button
+        android:id="@+id/btn_datePieChart"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Get Dates"/>
+
+    <TextView
+        android:id="@+id/tv_suburb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        />
+
+    <FrameLayout
+        android:id="@+id/pieChartLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+
+    </FrameLayout>
+
+    <!--<com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />-->
+
+    <TextView
+        android:id="@+id/tv_text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/barGraph"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/selectYear"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/spinner_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/year_array"/>
+    <Button
+        android:id="@+id/btn_yearBarChart"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/year"/>
+
+    <TextView
+        android:id="@+id/tv_selectedyear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="14dp"
+        android:textStyle="bold"/>
+
+<!--    <TextView
+        android:id="@+id/tv_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/displayTextGraph"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"/>-->
+
+    <!--<Button
+        android:id="@+id/btn_generateBarG"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text=""/>-->
+
+
+    <FrameLayout
+        android:id="@+id/barChartLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+
+    </FrameLayout>
+
+<!--    <include
+        layout="@layout/frag_simple_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_search"
+        android:layout_marginTop="10dp"
+        />-->
+<!--
+    <com.github.mikephil.charting.charts.BarChart
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/bar_chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"/>-->
+
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Icon by "https://www.flaticon.com/authors/good-ware-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".RegisterActivity">
+
+
+        <ImageView
+            android:id="@+id/iv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            app:srcCompat="@drawable/register" />
+
+        <EditText
+            android:id="@+id/et_fname"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/iv_register"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30dp"
+            android:background="#11000000"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tv_fname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/et_fname"
+            android:layout_alignStart="@id/et_fname"
+            android:layout_alignLeft="@id/et_fname"
+            android:text="First Name*" />
+
+        <EditText
+            android:id="@+id/et_lname"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/et_fname"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30dp"
+            android:background="#11000000"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tv_lname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/et_lname"
+            android:layout_alignStart="@id/et_lname"
+            android:layout_alignLeft="@id/et_lname"
+            android:text="Last Name*" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/et_lname"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30dp"
+            android:background="#11000000"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint=" example@mail.com"/>
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/et_email"
+            android:layout_alignStart="@id/et_email"
+            android:layout_alignLeft="@id/et_email"
+            android:text="Email*" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/et_email"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:background="#11000000"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/et_password"
+            android:layout_alignStart="@id/et_password"
+            android:layout_alignLeft="@id/et_password"
+            android:text="Password*" />
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_password"
+            android:layout_alignStart="@id/et_password"
+            android:layout_alignLeft="@id/et_password"
+            android:text="Gender*" />
+
+        <RadioGroup
+            android:id="@+id/radio_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_gender"
+            android:layout_alignStart="@id/tv_gender"
+            android:layout_alignLeft="@id/tv_gender"
+            android:background="#11000000">
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+
+            <RadioButton
+                android:id="@+id/radio_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_sex"
+            android:layout_alignStart="@id/et_password"
+            android:layout_alignLeft="@id/et_password"
+            android:layout_marginTop="10dp"
+            android:text="Date Of Birth*" />
+
+        <DatePicker
+            android:id="@+id/dp_dob"
+            android:layout_width="264dp"
+            android:layout_height="221dp"
+            android:layout_below="@id/tv_dob"
+            android:layout_alignStart="@id/et_password"
+            android:layout_alignLeft="@id/et_password"
+            android:layout_centerHorizontal="true"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+
+        <Button
+            android:id="@+id/btn_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dp_dob"
+            android:layout_alignStart="@id/et_password"
+            android:layout_alignLeft="@id/et_password"
+            android:layout_marginBottom="10dp"
+            android:text="Get Date"/>
+
+        <TextView
+            android:id="@+id/tv_selecteddob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_dob"
+            android:layout_alignStart="@id/et_password"
+            android:layout_alignLeft="@id/et_password"
+            android:paddingBottom="30dp" />
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/tv_selecteddob"
+            android:layout_centerInParent="true"
+            android:background="#11000000"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/et_address"
+            android:layout_alignStart="@id/et_email"
+            android:layout_alignLeft="@id/et_email"
+            android:text="Address*" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_address"
+            android:layout_alignStart="@id/et_email"
+            android:layout_alignLeft="@id/et_email"
+            android:text="State*"
+            android:paddingTop="10dp"/>
+
+        <Spinner
+            android:id="@+id/stateSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_state"
+            android:layout_alignStart="@id/et_email"
+            android:layout_alignLeft="@id/et_email"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:entries="@array/state_array" />
+
+        <Button
+            android:id="@+id/btn_state"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stateSpinner"
+            android:layout_alignStart="@id/et_password"
+            android:layout_alignLeft="@id/et_password"
+            android:layout_marginBottom="20dp"
+            android:text="Get State"/>
+
+        <TextView
+            android:id="@+id/tv_selectedstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_state"
+            android:layout_alignStart="@id/et_password"
+            android:layout_alignLeft="@id/et_password"
+            android:paddingBottom="30dp"/>
+
+        <EditText
+            android:id="@+id/et_postcode"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/tv_selectedstate"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30dp"
+            android:background="#11000000"
+            android:ems="10"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/tv_postcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/et_postcode"
+            android:layout_alignStart="@id/et_email"
+            android:layout_alignLeft="@id/et_email"
+            android:text="Postcode*" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_postcode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:text="Register" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_register"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+
+    </RelativeLayout>
+</ScrollView>

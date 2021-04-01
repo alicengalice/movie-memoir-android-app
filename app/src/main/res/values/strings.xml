@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MyMovieMemoir</string>
+    <string name="Open">open</string>
+    <string name="Close">close</string>
+    <string name="dateTimeSelect">1. Choose date and time that you have watched this movie:</string>
+    <string name="cinemaSelect">2. Choose cinema where you watched the movie:</string>
+    <string name="addcinema">Cannot find the cinema? Fill in below.</string>
+    <string name="addcomment">3. Any comment about the movie?</string>
+    <string name="rate">4. Rate this movie</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="pieChart">1. Generate Pie Chart</string>
+    <string name="selectDateChart">Please select starting date and ending date.</string>
+    <string name="startDate">Start Date:</string>
+    <string name="endDate">End Date:</string>
+    <string name="displayTextChart">Below is the total number of movies watched per suburb/postcode.</string>
+    <string name="barGraph">2. Generate Bar Graph</string>
+    <string name="selectYear">Please select a year.</string>
+    <string name="year">Get Year</string>
+    <string name="displayTextGraph">Below is the total number of movies watched per month for the selected year</string>
+</resources>
